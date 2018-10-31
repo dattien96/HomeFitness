@@ -23,6 +23,7 @@ versions.rxandroid = "2.0.2"
 versions.rxkotlin = "2.2.0"
 versions.runner = "1.0.2"
 versions.easy_permission = "1.2.0"
+versions.koin = "1.0.1"
 
 def supports = [:]
 supports.annotations = "com.android.support:support-annotations:$versions.support"
@@ -84,6 +85,11 @@ reactive.rxjava2 = "io.reactivex.rxjava2:rxjava:$versions.rxjava2"
 reactive.rxandroid = "io.reactivex.rxjava2:rxandroid:$versions.rxandroid"
 reactive.rxkotlin = "io.reactivex.rxjava2:rxkotlin:$versions.rxkotlin"
 
+def koin = [:]
+koin.core = "org.koin:koin-core:$versions.koin"
+koin.android = "org.koin:koin-android:$versions.koin"
+koin.viewmodel = "org.koin:koin-android-viewmodel:$versions.koin"
+
 def des = [:]
 des.support = supports
 des.binding = "androidx.databinding:databinding-compiler:$versions.android_gradle_plugin"
@@ -100,6 +106,7 @@ des.kotlin = kotlin
 des.glide = glides
 des.junit = "junit:junit:$versions.junit"
 des.reactive = reactive
+des.koin = koin
 des.runner = "com.android.support.test:runner:$versions.runner"
 des.android_gradle_plugin = "com.android.tools.build:gradle:$versions.android_gradle_plugin"
 des.permission = "pub.devrel:easypermissions:$versions.easy_permission"
